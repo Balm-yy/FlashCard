@@ -13,7 +13,7 @@ html, body {
 .vide {
     height: 20vh;
 }
-#startBtn {
+.button {
     background-color: lightblue;
 }
 .vide2 {

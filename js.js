@@ -3,10 +3,13 @@ const seeAnswerBtn = document.getElementById('answerBtn');
 const answerDisplay = document.getElementById('answerDisplay');
 const validateBtn = document.getElementById('validateBtn');
 const errorBtn = document.getElementById('errorBtn');
-const startBtn = document.getElementById('startBtn');
+const hiraganaBtn = document.getElementById('hiraganaBtn');
+const wordsBtn = document.getElementById('contentBtn');
 
 let errorCompteur = 0;
 let validateCompteur = 0;
+
+let choixBtn = "";
 
 let content = [
     ["あかい", "RED"],
@@ -79,8 +82,85 @@ let content = [
 ]
 
 
-let hiraganaToEnglish = [
-    ["がくせい", "STUDENT"],
+let hiragana = [
+    ["あ", "A"],
+    ["か", "KA"],
+    ["さ", "SA"],
+    ["た", "TA"],
+    ["な", "NA"],
+    ["は", "HA"],
+    ["ま", "MA"],
+    ["や", "YA"],
+    ["ら", "RA"],
+    ["わ", "WA"],
+    ["が", "GA"],
+    ["ざ", "ZA"],
+    ["だ", "DA"],
+    ["ば", "BA"],
+    ["ぱ", "PA"],
+    ["い", "I"],
+    ["き", "KI"],
+    ["し", "SHI"],
+    ["ち", "CHI"],
+    ["に", "NI"],
+    ["ひ", "HI"],
+    ["み", "MI"],
+    ["り", "RI"],
+    ["ぎ", "GI"],
+    ["じ", "JI"],
+    ["ぢ", "DJI"],
+    ["び", "BI"],
+    ["ぴ", "PI"],
+    ["う", "U"],
+    ["く", "KU"],
+    ["す", "SU"],
+    ["つ", "TSU"],
+    ["ぬ", "NU"],
+    ["ふ", "FU"],
+    ["む", "MU"],
+    ["ゆ", "YU"],
+    ["る", "RU"],
+    ["ぐ", "GU"],
+    ["ず", "ZU"],
+    ["づ", "DZU"],
+    ["ぶ", "BU"],
+    ["ぷ", "PU"],
+    ["え", "E"],
+    ["け", "KE"],
+    ["せ", "SE"],
+    ["て", "TE"],
+    ["ね", "NE"],
+    ["へ", "HE"],
+    ["め", "ME"],
+    ["れ", "RE"],
+    ["げ", "GE"],
+    ["ぜ", "ZE"],
+    ["で", "DE"],
+    ["べ", "BE"],
+    ["ぺ", "PE"],
+    ["お", "O"],
+    ["こ", "KO"],
+    ["そ", "SO"],
+    ["と", "TO"],
+    ["の", "NO"],
+    ["ほ", "HO"],
+    ["も", "MO"],
+    ["よ", "YO"],
+    ["ろ", "RO"],
+    ["を", "WO"],
+    ["ご", "GO"],
+    ["ぞ", "ZO"],
+    ["ど", "DO"],
+    ["ぼ", "BO"],
+    ["ぽ", "PO"],
+    ["ゔ", "V"],
+    ["ん", "N"],
+
+
+
+
+
+
 ]
 
 let partyBin = [];
@@ -88,21 +168,21 @@ let currentQuestionIndex = null;
 
 
 const showQuestion = () => {
-    if (content.length > 0 ) {
-    currentQuestionIndex = Math.floor(Math.random() * content.length);
-    questionDisplay.textContent = `${content[currentQuestionIndex][0]}`;
+    if (choixBtn.length > 0 ) {
+    currentQuestionIndex = Math.floor(Math.random() * choixBtn.length);
+    questionDisplay.textContent = `${choixBtn[currentQuestionIndex][0]}`;
     } else {
         questionDisplay.textContent = "You've finished !"
     }
 }
 
 const showAnswer = () => {
-        answerDisplay.textContent = `${content[currentQuestionIndex][1]}`;
+        answerDisplay.textContent = `${choixBtn[currentQuestionIndex][1]}`;
 }
 
 const removeQNA = () => {
-    partyBin.push(content.splice(currentQuestionIndex, 1))[0];
-    console.log(partyBin)
+    partyBin.push(choixBtn.splice(currentQuestionIndex, 1))[0];
+    //console.log(partyBin)
 }
 
 
@@ -112,8 +192,13 @@ const removeQNA = () => {
 
 
 
+hiraganaBtn.addEventListener("click", () => {
+    choixBtn = hiragana
+    showQuestion();
+})
 
-startBtn.addEventListener("click", () => {
+wordsBtn.addEventListener('click', () => {
+    choixBtn = content;
     showQuestion();
 })
 
@@ -135,7 +220,7 @@ validateBtn.addEventListener("click", () => {
 })
 
 seeAnswerBtn.addEventListener("click", () => {
-    if (content.length > 0 ) {
+    if (choixBtn.length > 0 ) {
     answerDisplay.className = "";
     answerDisplay.classList.add("show")
     showAnswer();
