@@ -1,0 +1,50 @@
+.addCardsContainer {
+    font-family: 'Chewy',sans-serif;
+    padding-top: 20px;  /* MARGIN WOULD BE BETTER BUT NOT WORKING */
+}
+
+.addCards {
+    background-color: var(--lightPurple);
+    border-radius: 15px;
+    padding : 15px;
+    width: 380px;
+}
+
+#categoryName {
+    margin-bottom: 0;
+}
+
+#listName {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.entete {
+    gap: 30%;
+}
+
+#enteteQnA {
+    margin-bottom: 5px;
+}
+
+.QnAContainer {
+    padding-top: 10px; /*HERE TO MARGIN WIOULD BE BETTER BUT NOT WORKING */
+}
+
+
+.inputLarge {
+    border-radius: 15px;
+    padding: 3px;
+    margin: 0;
+    width: 290px;
+    height: 30px;
+}
+
+.inputQnA {
+    border-radius: 15px;
+    padding: 3px;
+    margin: 0;
+    width: 140px;
+    height: 30px;
+}
+

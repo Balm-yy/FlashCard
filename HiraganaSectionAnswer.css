@@ -1,0 +1,66 @@
+
+
+/* WHAT IF ALL THE DOCUMENT (body) IS DISPLAY FLEX AND JUSTIFY-CONTENT-CENTER */
+
+
+#cardContainer {
+    width: 100vw;
+    height: 460px;
+    margin-top: 80px;
+}
+
+#card {
+    width: 330px;
+    height: 460px;
+    background-color: var(--lightPurple);
+    border-radius: 15px;
+    position: relative;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+}
+
+#questionText {
+    font-size: var(--bigCardTextSize);
+    font-family: 'Chewy', sans-serif;
+    position: absolute;
+}
+
+.arrowEnd2 {
+    position: absolute;
+    bottom: 10px;
+    transform: scaleX(-1);
+}
+
+
+
+/* BUTTONS MISTAKES & VALIDATE */
+
+.buttonContainer {
+    margin-top: 40px;
+    width : 100vw;
+    height: 80px;
+}
+
+.validateButtonContainer & .mistakeButtonContainer {
+    width: 64px;
+    height: 73px;
+
+}
+
+.validateButton {
+    width: 70px;
+    height: 70px;
+    background-color: var(--validateBtn);
+    border-radius: 45%;
+}
+
+.mistakeButton {
+    width: 70px;
+    height: 70px;
+    background-color: var(--mistakeBtn);
+    border-radius: 45%;
+}
+
+.textBtn  {
+    font-family: 'Chewy', sans-serif;
+    font-size: 55px;
+}
