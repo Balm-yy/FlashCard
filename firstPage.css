@@ -26,13 +26,13 @@ html, body {
 
 .mascot-container {
     position: absolute;
-    top: 35%;
-    left: 12%;
+    top: 40%;
+    left: 22%;
     z-index: 3;
 }
 #mascot-img {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
 }
 .button-container {
     position: absolute;
