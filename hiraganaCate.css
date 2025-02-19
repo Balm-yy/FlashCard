@@ -6,11 +6,12 @@
     display: flex;
     justify-content: center;
     font-family: 'Chewy', sans-serif;
-    margin-top: 50px;    
+    margin-top: 50px; 
+    width: 100vw;
 }
 
 .resum {
-    width: 360px;
+    width: 95vw;
     height: 210px;
     background-color: var(--lightPurple);
     border-radius: 15px;

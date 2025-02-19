@@ -1,13 +1,17 @@
+
+
 .addCardsContainer {
     font-family: 'Chewy',sans-serif;
     padding-top: 20px;  /* MARGIN WOULD BE BETTER BUT NOT WORKING */
+    height: 65vh;
+
 }
 
 .addCards {
     background-color: var(--lightPurple);
     border-radius: 15px;
     padding : 15px;
-    width: 380px;
+    width: 95vw;
 }
 
 #categoryName {
@@ -48,3 +52,26 @@
     height: 30px;
 }
 
+.scrollElementVertically {
+    height: 245px;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+/* ADD CARDS BUTTON + MASCOT */
+.addCardsButtonContainer {
+    height: 65px;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+}
+
+
+#purpleMascotSitting {
+   position: absolute;
+   bottom: 0px;
+   left: 5px;
+}

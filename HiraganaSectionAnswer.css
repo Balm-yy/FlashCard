@@ -43,7 +43,7 @@
 .validateButtonContainer & .mistakeButtonContainer {
     width: 64px;
     height: 73px;
-
+    text-decoration: none;
 }
 
 .validateButton {
@@ -63,4 +63,9 @@
 .textBtn  {
     font-family: 'Chewy', sans-serif;
     font-size: 55px;
+}
+
+#linkToNextPage {
+    text-decoration: none;
+    color: var(--darkColorFont);
 }

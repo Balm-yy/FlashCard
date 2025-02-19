@@ -1,8 +1,6 @@
 * {
     /*outline: 1px solid red;*/
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 @font-face {
     font-family: 'Chewy';
@@ -44,7 +42,7 @@
 
 
 html, body {
-    height: 100vh;
+    height: 100dvh;   /* HERE WHEN I PUT DVH THERE IS NOT MORE SUSPICIOUS MARGIN */ /* Car il ne prend que l'écran dynamic*/
     width: 100vw;
     font-size: 20px;
     scrollbar-width: none;
@@ -55,10 +53,10 @@ html, body {
 
 /* SMARTPHONE MARGE*/
 /*IPHONE*/
-.bottomMargeIphone {
+/*.bottomMargeIphone {
     width: 100vw;
     height: 64px;
-}
+}*/
 /*ANDROID*/
 .bottomMargeAndroid {
     width: 100vw;

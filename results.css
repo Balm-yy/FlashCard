@@ -1,7 +1,7 @@
 
 
 #mascotResultContainer {
-    margin-top: 60px;
+    margin-top: 40px;
     padding: 10px;
     font-family: 'Chewy', sans-serif;
     font-size: var(--bigCongratsTextSize);
@@ -10,12 +10,15 @@
 
 
 .fewMistakesContainer {
-    margin-top: 50px;
+    margin-top: 20px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 .pinkMistakesContainer {
     background-color: var(--pink);
-    width: 380px;
+    width: 95vw;
     height: 400px;
     border-radius: 15px;
     padding: 30px;
