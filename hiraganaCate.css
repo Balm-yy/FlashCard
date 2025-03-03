@@ -28,34 +28,47 @@
 
 /* STUDY PART */
 
+.containerStudyPart {
+    padding-top: 50px;
+}
+
 #studyPart {
     width: 350px;
     height: 220px;
-    margin-top: 50px;
-    /*outline: 1px solid red;*/
-    gap: 30px;
+    gap: 20px;
+}
+
+.studyElementRMistakesContainer {
+    outline: 1px solid red;
+    row-gap: 20px;
+}
+
+.leContainerDuTexte {
+    width: 90%;
+    flex-shrink: 0;
+    overflow-wrap: break-word;
+    outline: 1px solid green;
 }
 
 #containerStudyPart {
-    width: 200px;
-    height: 220px;
+    width: 120px;
+    height: 120px;
     background-color: var(--darkPurple);
     /*outline: 1px solid blue;*/
     text-decoration: none;
     color: var(--whiteColorFont);
     font-family: 'Chewy', sans-serif;
-    font-size: var(--btnTextSize);
+    font-size: var(--smallContentTextSize);
     border-radius: 15px;
-    flex-shrink: 0;
+    overflow-wrap: break-word;
+    outline: 1px solid blue;
 }
 
 #purpleMascotProf {
     transform: scaleX(-1);
 }
 
-#textBtn {
-    width: 180px;
-}
+
 
 
 
