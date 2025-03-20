@@ -183,11 +183,9 @@
     height: 100%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    opacity: 0.5;
 }
-.hiddenContent {
-    position: relative;
-    opacity: 0.7;
-}
+
 .cateHolder {
     height: 100%;
     width: 100%;

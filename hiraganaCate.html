@@ -30,7 +30,7 @@
 
     <div class="mainContainer">
         <div class="bgContainer d-flex columns sortable-container">
-                <div class="choosed draggable">
+                <div id="containerA" class="choosed draggable">
                     <!-- ELEMENTS -->
                     <div class="cateHolder">
                         <div class="title">
@@ -45,9 +45,9 @@
                         
                     </div>
                 </div>
-                <div class="hidden hiddenContent draggable">
+                <div id="containerB" class="hidden draggable">
                     <!-- MISTAKES -->
-                    <div class="cateHolder hiddenContent">
+                    <div class="cateHolder ">
                         <div class="title">
                             <p>Study Mistakes</p>
                         </div>
@@ -74,8 +74,17 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
     <script src="hiraganaCate.js"></script>
-    <scrip src="hiraganaCateMobile.js"></scrip>
+   <!--
 
+   SCRIPT POUT LA VERSION MOBILE 
+   MAIS LE DRAG AND DROP PERMET DE CHANGER L'ORDRE DES CATEGORIES DANS LE DOM 
+   ET NOUS VOULONS SEULEMENT QUE LES CLASSES S'INTERCHANGENT.
+
+   LA VERSION COMPUTER IS WORKING !
+    
+   <scrip src="hiraganaCateMobile.js"></scrip>
+
+   -->
 
 </body>
 </html>
