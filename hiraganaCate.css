@@ -214,3 +214,17 @@
     color: var(--btnColorFont);
     font-size: var(--btnTextSize);
 }
+
+
+
+/*  LIEN AVEC JS */
+.parent-container {
+    display: flex;
+    justify-content: space-between; /* ou toute autre mise en page */
+    position: relative; /* Assure que le conteneur ne se déplace pas */
+}
+
+.ghost {
+    opacity: 0.5;
+    border: 1px dashed gray; /* Ajoutez un effet visuel lorsque l'élément est en cours de déplacement */
+}

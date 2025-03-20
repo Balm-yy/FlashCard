@@ -29,8 +29,8 @@
 
 
     <div class="mainContainer">
-        <div class="bgContainer d-flex columns">
-                <div class="choosed">
+        <div class="bgContainer d-flex columns sortable-container">
+                <div class="choosed draggable">
                     <!-- ELEMENTS -->
                     <div class="cateHolder">
                         <div class="title">
@@ -45,11 +45,11 @@
                         
                     </div>
                 </div>
-                <div class="hidden hiddenContent">
+                <div class="hidden hiddenContent draggable">
                     <!-- MISTAKES -->
                     <div class="cateHolder hiddenContent">
                         <div class="title">
-                            <p>Study Elements</p>
+                            <p>Study Mistakes</p>
                         </div>
                         <div class="mascot">
                             <img src="mascots/purpleMascotMistakes.svg" width="130px" >
@@ -72,8 +72,10 @@
         </a>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script src="hiraganaCate.js"></script>
+    <scrip src="hiraganaCateMobile.js"></scrip>
 
-        
 
 </body>
 </html>
