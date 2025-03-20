@@ -30,15 +30,15 @@
 
     <!-- CARD -->
     <div class="d-flex align-items-center justify-content-center" id="cardContainer">
-        <div href="HiraganaSectionAnswer.html" class="d-flex row align-items-center justify-content-center" id="card">
+        <div class="d-flex columns align-items-center justify-content-center" id="card">
 
-            <div class="questionContainer d-flex justify-content-center mt-4">
-                <p class="text-center" id="questionText">MU</p>
+		<!-- Input Container (Question OR Answer) -->
+            <div class="questionContainer d-flex justify-content-center align-items-center">
+                <p class="text-center" id="questionText">Question here </p>
             </div>
 
-
             <!-- Arrow -->
-            <a href="HiraganaSectionQuestion.html" class="d-flex justify-content-end">
+            <a class="d-flex justify-content-end">
                 <svg width="25px" class="arrowEnd2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                    <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
@@ -50,7 +50,7 @@
 
     <!-- MISTAKES / VALIDATE BUTTON -->
 
-    <div class="buttonContainer d-flex columns justify-content-around">
+    <div class="buttonContainer d-flex columns justify-content-around hidden">
         <a href="finishExercise.html" id="linkToNextPage">
             <div class="mistakeButtonContainer">
                 <div class="mistakeButton">
@@ -67,6 +67,6 @@
         </a>
     </div>
 
-    
+    <script src="hiraganaSectionsAnswer.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 * {
     /*outline: 1px solid red;*/
     box-sizing: border-box;
+    font-family: 'Chewy', sans-serif;
 }
 @font-face {
     font-family: 'Chewy';
